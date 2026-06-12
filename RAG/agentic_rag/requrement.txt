@@ -1,5 +1,21 @@
-streamlit
-agno>=2.2.10
-GROQ
-lancedb
-python-dotenv
+# Core dependencies for LLM and embeddings
+langchain-core       # Core LangChain abstractions for prompts, documents, and runnables
+langchain-groq       # Integration with Groq API for fast LLM inference
+langchain-huggingface # HuggingFace embeddings integration for semantic search
+
+# LLM agent and workflow
+langgraph            # LangGraph for building agentic workflows and tool-calling agents
+
+# PDF processing
+pypdf                # PDF text extraction and parsing
+
+# Frontend and UI
+streamlit            # Web framework for building interactive chat interface
+
+# Machine learning and embeddings
+torch                # PyTorch deep learning framework (required by sentence-transformers)
+torchvision          # Computer vision utilities for PyTorch (dependency of sentence-transformers)
+sentence-transformers # Pre-trained sentence embedding models for semantic search
+
+# Utilities
+python-dotenv        # Load environment variables from .env file (for API keys)
